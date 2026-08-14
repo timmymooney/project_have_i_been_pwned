@@ -18,15 +18,18 @@ The password checker uses the **k-anonymity model**, meaning the full password i
 project_have_i_been_pwned/
 ├── src/
 │   ├── __init__.py
-│   ├── config.py
+│   ├── check_email.py
 │   ├── check_password.py
-│   └── check_email.py
+|   └── config.py
 ├── tests/
-│   ├── test_password.py
-│   └── test_email.py
-├── requirements.txt
+│   ├── test_check_email.py
+│   └── test_check_password.py
+├── .env.example
 ├── .gitignore
-└── README.md
+├── LICENSE
+├── pytest.ini
+├── README.md
+└── requirements.txt
 ```
 
 ## Installation
@@ -104,9 +107,14 @@ The plaintext password is never transmitted.
 
 ## Testing
 
-Test files are located in the `tests/` directory.
+Respective test files for the check password and check email scripts are located in the `tests/` directory, using pytest functions. 
+
+To run test suite, run the following in the base root of the project directory:
+```bash
+pytest -v
+```
 
 ## Future improvements
 
-* Unit tests
+* Unit testing with Pytest (WIP)
 * More verbose terminal output
