@@ -9,7 +9,7 @@ The password checker uses the **k-anonymity model**, meaning the full password i
 * Secure password checking using SHA-1 hash prefix matching
 * Command-line interface
 * Modular Python package structure
-* Unit test scaffold (WIP)
+* Unit tests with Pytest
 * Email breach checker implementation (requires a HIBP Account and API key)
 
 ## Project Directory Tree
@@ -67,7 +67,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-## Password checking
+## Password Checking
 
 Run:
 
@@ -81,7 +81,7 @@ Example output:
 'Password321' was found X number of times. You should change this password.
 ```
 
-## Email checking
+## Email Checking
 
 The email breach API requires a **HIBP API key**.
 
@@ -114,7 +114,7 @@ To run test suite, run the following in the base root of the project directory:
 pytest -v
 ```
 
-## Future improvements
+## Future Improvements
 
-* Unit testing with Pytest (WIP)
 * More verbose terminal output
+* Further unit tests
